@@ -1,0 +1,13 @@
+my-website/
+├── blog/                # Markdown格式的博客文章
+├── docs/                # Markdown格式的文档
+├── src/                 # React组件和CSS样式
+├── static/              # 静态文件如图片等
+├── docusaurus.config.js # Docusaurus配置文件
+└── package.json         # Node.js项目配置文件
+
+
+npm run start	启动开发服务器
+npm run build	构建生产环境代码
+npm run serve	本地测试生产环境构建
+npm run clear	清除缓存和构建文件
