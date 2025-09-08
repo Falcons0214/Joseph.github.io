@@ -1,3 +1,13 @@
+Joseph:
+  name: Joseph Huang
+  title: Engineer
+  url: https://www.linkedin.com/in/%E6%9F%8A%E6%A3%AE-%E9%BB%83-7b29251a9/
+  image_url: https://media.licdn.com/dms/image/v2/D5603AQEb-T2Jl5dLoA/profile-displayphoto-scale_400_400/B56ZkpgauvJsAg-/0/1757337988829?e=1759968000&v=beta&t=D7APsLrYTD2KqoDU6DRHkD7lBmz8Op-PNLJ2LQ1d3q0
+  page: true
+  socials:
+    linkedin: https://www.linkedin.com/in/%E6%9F%8A%E6%A3%AE-%E9%BB%83-7b29251a9/
+    github: https://github.com/Falcons0214
+
 yangshun:
   name: Yangshun Tay
   title: Ex-Meta Staff Engineer, Co-founder GreatFrontEnd
@@ -9,17 +19,3 @@ yangshun:
     linkedin: yangshun
     github: yangshun
     newsletter: https://www.greatfrontend.com
-
-slorber:
-  name: Sébastien Lorber
-  title: Docusaurus maintainer
-  url: https://sebastienlorber.com
-  image_url: https://github.com/slorber.png
-  page:
-    # customize the url of the author page at /blog/authors/<permalink>
-    permalink: '/all-sebastien-lorber-articles'
-  socials:
-    x: sebastienlorber
-    linkedin: sebastienlorber
-    github: slorber
-    newsletter: https://thisweekinreact.com
