@@ -28,3 +28,22 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+.main-heading {
+  font-family: 'Bradley Hand', serif;
+  color: #000000;
+  text-align: center;
+  font-size: 48px;
+}
+
+.container {
+  display: grid;
+  gap: 50px;
+}
+
+.self-intro-head {
+  font-family: 'Bradley Hand', serif;
+  color: #000000;
+  text-align: center;
+  margin-right: 50px;
+}
