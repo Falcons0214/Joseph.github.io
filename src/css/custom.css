@@ -30,10 +30,10 @@
 }
 
 .main-heading {
-  font-family: 'Bradley Hand', serif;
+  font-family: 'papyrus';
   color: #000000;
   text-align: center;
-  font-size: 48px;
+  font-size: 28px;
 }
 
 .container {
@@ -42,8 +42,9 @@
 }
 
 .self-intro-head {
-  font-family: 'Bradley Hand', serif;
+  font-family: Arial;
   color: #000000;
-  text-align: center;
+  text-align: left;
   margin-right: 50px;
+  font-size: 28px;
 }
