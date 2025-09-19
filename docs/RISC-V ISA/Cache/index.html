@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-RISC-V ISA/Cache" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.8.1">
+<title data-rh="true">Cache | My Sitess</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://your-docusaurus-site.example.com/docs/RISC-V ISA/Cache"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Cache | My Sitess"><meta data-rh="true" name="description" content="What is Cache ?"><meta data-rh="true" property="og:description" content="What is Cache ?"><link data-rh="true" rel="icon" href="/img/image.svg"><link data-rh="true" rel="canonical" href="https://your-docusaurus-site.example.com/docs/RISC-V ISA/Cache"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/docs/RISC-V ISA/Cache" hreflang="en"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/docs/RISC-V ISA/Cache" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Cache","item":"https://your-docusaurus-site.example.com/docs/RISC-V ISA/Cache"}]}</script><link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="My Sitess RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="My Sitess Atom Feed"><link rel="stylesheet" href="/assets/css/styles.fdc3fc28.css">
+<script src="/assets/js/runtime~main.b05a0db7.js" defer="defer"></script>
+<script src="/assets/js/main.54346240.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t="light";var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",e||t),document.documentElement.setAttribute("data-theme-choice",e||t)}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/img/head.png"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/head.png" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/head.png" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Joseph Huang</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/docs/Column Base DBMS/B-link-tree">Notes</a><a class="navbar__item navbar__link" href="/blog">Blog</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs/Column Base DBMS/B-link-tree">Column Base DBMS</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs/FreeRTOS/Initialization Macro">FreeRTOS</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs/Linux Kernel/Process">Linux Kernel</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs/Multi-Core Programming/Log System">Multi-Core Programming</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/docs/RISC-V ISA/Cache">RISC-V ISA</a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/docs/RISC-V ISA/Cache">Cache</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/RISC-V ISA/Simple_RV32I_CPU">Simple_RV32I_CPU</a></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">RISC-V ISA</span></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Cache</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Cache</h1></header><h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-is-cache-">What is Cache ?<a href="#what-is-cache-" class="hash-link" aria-label="Direct link to What is Cache ?" title="Direct link to What is Cache ?">​</a></h2>
+<blockquote>
+<p>A cache is a hardware or software component that stores data so that future requests for that data can be served faster.</p>
+</blockquote>
+<div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>warning</div><div class="admonitionContent_BuS1"><ul>
+<li>Cache 儲存的 data 從何而來 ？</li>
+<li>The data stored in a cache might be the result of an earlier computation or a copy of data stored elsewhere (usually memory).</li>
+</ul></div></div>
+<p><img decoding="async" loading="lazy" src="https://hackmd.io/_uploads/HyDZWK031e.jpg" alt="cache_comic" class="img_ev3q"></p>
+<div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>warning</div><div class="admonitionContent_BuS1"><p>Cache 就像是你的書桌一樣，用來放你接觸頻率最高的物品，它空間有限不能無限擴大，所以每當桌子快滿時，我們就必須選出一些較少使用的物品放回櫃子，才會有空間去放最近使用頻率較高的物品。</p></div></div>
+<p>根據上述，我們需要將 <strong>“使用頻率較低的物品移出桌子”</strong>，並 <strong>“移入使用頻率較高的物品”</strong>，這兩項操作就衍生出 <strong>Cache Mapping</strong>。</p>
+<p>如何精準的將未來會使用到的物品先放到桌子旁，並挑選出未來使用頻率最低的物品放回櫃子，這就是 Cache Mapping 在探討的問題。</p>
+<p><strong>Four important questions:</strong>
+<!-- -->‼️</p>
+<blockquote>
+<ol>
+<li>When we copy a block of data from main memory to the cache, <strong>where exactly should we put it ?</strong></li>
+<li>How can we tell if a word is already in the cache, or if it has to be fetched from main memory first ?</li>
+<li>Eventually, the small cache memory might fill up. To load a new block from main RAM, we’d have to replace one of the existing blocks in the cache... which one?</li>
+<li>How can write operations be handled by the memory system?</li>
+</ol>
+</blockquote>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="cache-mapping">Cache Mapping<a href="#cache-mapping" class="hash-link" aria-label="Direct link to Cache Mapping" title="Direct link to Cache Mapping">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="direct-mapped">direct-mapped<a href="#direct-mapped" class="hash-link" aria-label="Direct link to direct-mapped" title="Direct link to direct-mapped">​</a></h3>
+<p><img decoding="async" loading="lazy" src="https://hackmd.io/_uploads/ByOU8tCnJl.png" alt="image" class="img_ev3q"></p>
+<p>Let Cache size be: X<br>
+<!-- -->Memory Address be: Q</p>
+<p>The cache index that is used to store the corresponding memory unit is:</p>
+<p>Q  %  X</p>
+<p>or by least-significant bits</p>
+<p><img decoding="async" loading="lazy" src="https://hackmd.io/_uploads/HJECPYC21l.png" alt="image" class="img_ev3q"></p>
+<p>目前為止我們已經將 memory block 與 cache line 建立映射關係，接下來就是要:</p>
+<ul>
+<li><strong>如何記錄需要被更新回 main memory 的 cache line ?</strong></li>
+<li><strong>如何記錄目前 cache line 所代表的為哪一個 memory block?</strong></li>
+<li><strong>如何得知 Cache line 是否在使用中（Full or Empty）？</strong></li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="tag">Tag<a href="#tag" class="hash-link" aria-label="Direct link to Tag" title="Direct link to Tag">​</a></h4>
+<p><img decoding="async" loading="lazy" src="https://hackmd.io/_uploads/ryr4tF0nJx.png" alt="image" class="img_ev3q"></p>
+<p>‼️<!-- -->
+將 Cache line index 與 Tag 結合可以知道，當前 Cache line 所對應的 memory block 位址。</p>
+<p><img decoding="async" loading="lazy" src="https://hackmd.io/_uploads/S1jRiK0n1g.png" alt="image" class="img_ev3q"></p>
+<p>既然要能夠完全表示 memory block 位址，Tag 需要花費的 Bits 就會與 Memory size &amp; Cache size 息息相關。</p>
+<ul>
+<li>Memory Size: 2^n</li>
+<li>Cache Size:  2^m</li>
+<li>Bits in Tag: n - m</li>
+</ul>
+<p>知道了 Cache line 所對應的 memory block 後，再來則是確認 Cache Line 是否有被使用(Full or Empty)?</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="the-valid-bit">the valid bit<a href="#the-valid-bit" class="hash-link" aria-label="Direct link to the valid bit" title="Direct link to the valid bit">​</a></h4>
+<p><img decoding="async" loading="lazy" src="https://hackmd.io/_uploads/SJTvRFR3yg.png" alt="image" class="img_ev3q"></p>
+<p>‼️<!-- -->
+<strong>So the cache contains more than just copies of the data in memory;
+it also has bits to help us find data within the cache and verify its validity.</strong></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="what-happens-on-a-cache-hit-">What happens on a cache hit ?<a href="#what-happens-on-a-cache-hit-" class="hash-link" aria-label="Direct link to What happens on a cache hit ?" title="Direct link to What happens on a cache hit ?">​</a></h3>
+<div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>warning</div><div class="admonitionContent_BuS1"><p>When the CPU tries to read from memory, the address will be sent to a cache controller.</p></div></div>
+<p><strong>32-bits Memory Address with 2^10-bytes Cache</strong>
+<img decoding="async" loading="lazy" src="https://hackmd.io/_uploads/H1V7e5A3kl.png" alt="image" class="img_ev3q"></p>
+<ol>
+<li>確認 memory address 的前 32 - 10 個 Bit 與 Tag 是否相同，若一樣代表該 Cache Line 與之相應。</li>
+<li>檢查 Valid Bits 是否為 1。</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="what-happens-on-a-cache-miss-">What happens on a cache miss ?<a href="#what-happens-on-a-cache-miss-" class="hash-link" aria-label="Direct link to What happens on a cache miss ?" title="Direct link to What happens on a cache miss ?">​</a></h3>
+<div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>warning</div><div class="admonitionContent_BuS1"><p>However, a much slower main memory access is needed on a cache miss.</p><p>The simplest thing to do is to stall the pipeline until the data from main memory can be fetched (and also copied into the cache).</p></div></div>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="execise-1">Execise 1<a href="#execise-1" class="hash-link" aria-label="Direct link to Execise 1" title="Direct link to Execise 1">​</a></h3>
+<p>For a byte-addressable machine with 16-bit addresses with a cache with the following characteristics:</p>
+<ul>
+<li>It is direct-mapped</li>
+<li>Each block holds one byte</li>
+<li>The cache index is the four least significant bits</li>
+</ul>
+<div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>warning</div><div class="admonitionContent_BuS1"><p>Question: How many blocks does the cache hold?
+:::spoiler Answer</p><p>As we know <strong>cache index is the four least significant bits</strong>, so the answer is -&gt; $2^4$</p></div></div>
+<div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>warning</div><div class="admonitionContent_BuS1"><p>Question: How many bits of storage are required to build the cache (e.g., for the
+data array, tags, etc.)?</p><p>:::spoiler Answer
+For a Cache line we need 8-bit for stored our data, and we need 12-bit for tag value, and 1-bit for valid-bit, so totally we need 21-bit for a cache line.</p></div></div>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="spatial-locality">Spatial locality<a href="#spatial-locality" class="hash-link" aria-label="Direct link to Spatial locality" title="Direct link to Spatial locality">​</a></h3>
+<p>透過下列情境解釋何謂 Spatial locality ?</p>
+<ol>
+<li>
+<p>Panel 1: CPU Requests Data</p>
+<ul>
+<li>The CPU character (a cute computer chip) looks at a memory grid and requests data from address X.</li>
+</ul>
+<p>Text: &quot;Hmm, I need data from address X!&quot;
+Concept: The CPU needs a piece of data stored in main memory.</p>
+</li>
+<li>
+<p>Panel 2: Data is Loaded into Cache</p>
+<ul>
+<li>The CPU fetches address X from memory and places it into the cache (a smaller, faster memory).</li>
+</ul>
+<p>Text: &quot;Got it! Let’s put X into the cache.&quot;
+Concept: When data is loaded from memory, a whole block (including nearby addresses, e.g., X+1, X+2) is also loaded into the cache.</p>
+</li>
+<li>
+<p>Panel 3: CPU Requests Nearby Data</p>
+<ul>
+<li>The CPU now requests X+1 and X+2.</li>
+</ul>
+<p>Text: &quot;Oh! I also need X+1 and X+2!&quot;
+Concept: Since these addresses are close to X, they are already in the cache.</p>
+</li>
+<li>
+<p>Panel 4: Cache Hit! Fast Access</p>
+<ul>
+<li>The CPU finds the data in the cache, avoiding slow memory access.</li>
+</ul>
+<p>Text: &quot;Thanks to spatial locality, I already have those in cache! Fast and efficient!&quot;
+Concept: This is a cache hit, meaning the CPU doesn&#x27;t have to go to main memory again, making data access much faster.</p>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="block-addresses">Block addresses<a href="#block-addresses" class="hash-link" aria-label="Direct link to Block addresses" title="Direct link to Block addresses">​</a></h3>
+<p><img decoding="async" loading="lazy" src="https://hackmd.io/_uploads/rkEhj5Rh1e.png" alt="image" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" src="https://hackmd.io/_uploads/BkdSpq0nyl.png" alt="image" class="img_ev3q"></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="locating-data-in-the-cache">Locating data in the cache<a href="#locating-data-in-the-cache" class="hash-link" aria-label="Direct link to Locating data in the cache" title="Direct link to Locating data in the cache">​</a></h3>
+<p><img decoding="async" loading="lazy" src="https://hackmd.io/_uploads/HykVkiAnJl.png" alt="image" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" src="https://hackmd.io/_uploads/ryOr1i0h1e.png" alt="image" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" src="https://hackmd.io/_uploads/Hy-DJsRhkg.png" alt="image" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" src="https://hackmd.io/_uploads/HJ26JjAn1g.png" alt="image" class="img_ev3q"></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="execise-2">Execise 2<a href="#execise-2" class="hash-link" aria-label="Direct link to Execise 2" title="Direct link to Execise 2">​</a></h3>
+<p><img decoding="async" loading="lazy" src="https://hackmd.io/_uploads/Skmvli03Jg.png" alt="image" class="img_ev3q"></p>
+<p>:::spoiler Answer</p>
+<ul>
+<li>1010 -&gt; <code>0xDE</code></li>
+<li>1110 -&gt; Cache miss (valid bit is 0)</li>
+<li>0001 -&gt; <code>0xFE</code></li>
+<li>1101 -&gt; Cache miss (tag not equal)
+:::</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="disadvantage-of-direct-mapping">Disadvantage of direct mapping<a href="#disadvantage-of-direct-mapping" class="hash-link" aria-label="Direct link to Disadvantage of direct mapping" title="Direct link to Disadvantage of direct mapping">​</a></h3>
+<p><img decoding="async" loading="lazy" src="https://hackmd.io/_uploads/S1eEziAnkx.png" alt="image" class="img_ev3q"></p>
+<p>‼️</p>
+<blockquote>
+<p>如果對 對應到相同 Cache Line 的 memory block 輪流進行存取，這時每一次的存取都會 Cache Miss，其原因出在 Directly Mapping 的設計上，因為不同 memory block 只能載入到固定的 Cache Line 上。</p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="a-fully-associative-cache">A fully associative cache<a href="#a-fully-associative-cache" class="hash-link" aria-label="Direct link to A fully associative cache" title="Direct link to A fully associative cache">​</a></h3>
+<div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>warning</div><div class="admonitionContent_BuS1"><p>A fully associative cache permits data to be stored in any cache block, instead of forcing each memory address into one particular block.</p></div></div>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="the-price-of-full-associativity">The price of full associativity<a href="#the-price-of-full-associativity" class="hash-link" aria-label="Direct link to The price of full associativity" title="Direct link to The price of full associativity">​</a></h4>
+<p>‼️</p>
+<blockquote>
+<ul>
+<li><strong>Because there is no index field in the address anymore, the entire address must be used as the tag, increasing the total cache size.</strong></li>
+<li><strong>Data could be anywhere in the cache, so we must check the tag of every cache block. That’s a lot of comparators!</strong></li>
+</ul>
+</blockquote>
+<p><img decoding="async" loading="lazy" src="https://hackmd.io/_uploads/ByPjwaC2Je.png" alt="image" class="img_ev3q"></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="set-associativity">Set associativity<a href="#set-associativity" class="hash-link" aria-label="Direct link to Set associativity" title="Direct link to Set associativity">​</a></h3>
+<div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>warning</div><div class="admonitionContent_BuS1"><p>Set associativity 是 fully associativity 的折衷，畢竟 fully associativity 所需的花費太高。</p><p>fully associativity 的初衷是希望 memory block 映射到的 Cache Line 能夠不受限制，但代價就是需要非常大量的硬體。</p><p>Set associativity 則是讓 memory block 能映射到一個 set 的 Cache。</p></div></div>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="what-is-set-">What is &quot;set&quot; ?<a href="#what-is-set-" class="hash-link" aria-label="Direct link to What is &quot;set&quot; ?" title="Direct link to What is &quot;set&quot; ?">​</a></h4>
+<p>‼️</p>
+<blockquote>
+<ul>
+<li><strong>The cache is divided into groups of blocks, called sets.</strong></li>
+<li><strong><font color="#ff0000">Each memory address maps to exactly one set in the cache, but data may be placed in any block within that set.</font></strong></li>
+</ul>
+</blockquote>
+<p><img decoding="async" loading="lazy" src="https://hackmd.io/_uploads/Sy_ndpAnJx.png" alt="image" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" src="https://hackmd.io/_uploads/BysbkAA3yl.png" alt="image" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" src="https://hackmd.io/_uploads/Hy48g003kg.png" alt="image" class="img_ev3q"></p>
+<p><strong>n-way associativity 開頭的 <code>n</code> 表示組成一個 set 的 block 數量。</strong>
+所謂的 n-way 則是 memory block 能夠映射到 Cache Line 的數量。</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="locating-a-set-associative-block">Locating a set associative block<a href="#locating-a-set-associative-block" class="hash-link" aria-label="Direct link to Locating a set associative block" title="Direct link to Locating a set associative block">​</a></h3>
+<p><img decoding="async" loading="lazy" src="https://hackmd.io/_uploads/HkaRcTRnJe.png" alt="image" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" src="https://hackmd.io/_uploads/B1kSvRR2kg.png" alt="image" class="img_ev3q"></p>
+<div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>warning</div><div class="admonitionContent_BuS1"><p>$2n$ = Cache line size</p><ul>
+<li>Block Offset = $Memory Address \ mod \ 2n$</li>
+<li>Block Address = $Memory Address \  / \ 2n$</li>
+<li>Set Index = $Block Address \ mod \ 2s$</li>
+</ul></div></div>
+<div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>warning</div><div class="admonitionContent_BuS1"><ul>
+<li>Set Index: Cache Line 的編號。</li>
+<li>Block Address: 第幾個 Memory Block</li>
+<li>Block Offset: memory block 所在的 Set 中的位址(下圖的 way0 or way1)。</li>
+</ul></div></div>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="example-placement-in-set-associative-caches">Example placement in set-associative caches<a href="#example-placement-in-set-associative-caches" class="hash-link" aria-label="Direct link to Example placement in set-associative caches" title="Direct link to Example placement in set-associative caches">​</a></h3>
+<p>2-way set associative cache implementation</p>
+<p><img decoding="async" loading="lazy" src="https://hackmd.io/_uploads/SkWPVAR3yx.png" alt="image" class="img_ev3q"></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="reference">Reference<a href="#reference" class="hash-link" aria-label="Direct link to Reference" title="Direct link to Reference">​</a></h2>
+<p>[0]。<a href="https://courses.cs.washington.edu/courses/cse378/09wi/lectures/lec15.pdf" target="_blank" rel="noopener noreferrer">How do caches work?</a></p>
+<p>[1]。<a href="https://alg.manifoldapp.org/read/computer-organization/section/3d477606-2c6e-4b2f-b6dc-6c5eb9afb56a" target="_blank" rel="noopener noreferrer">Computer Organization</a></p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/RISC-V ISA/Cache.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/Multi-Core Programming/Log System"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Log System</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/RISC-V ISA/Simple_RV32I_CPU"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Simple_RV32I_CPU</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#what-is-cache-" class="table-of-contents__link toc-highlight">What is Cache ?</a></li><li><a href="#cache-mapping" class="table-of-contents__link toc-highlight">Cache Mapping</a><ul><li><a href="#direct-mapped" class="table-of-contents__link toc-highlight">direct-mapped</a></li><li><a href="#what-happens-on-a-cache-hit-" class="table-of-contents__link toc-highlight">What happens on a cache hit ?</a></li><li><a href="#what-happens-on-a-cache-miss-" class="table-of-contents__link toc-highlight">What happens on a cache miss ?</a></li><li><a href="#execise-1" class="table-of-contents__link toc-highlight">Execise 1</a></li><li><a href="#spatial-locality" class="table-of-contents__link toc-highlight">Spatial locality</a></li><li><a href="#block-addresses" class="table-of-contents__link toc-highlight">Block addresses</a></li><li><a href="#locating-data-in-the-cache" class="table-of-contents__link toc-highlight">Locating data in the cache</a></li><li><a href="#execise-2" class="table-of-contents__link toc-highlight">Execise 2</a></li><li><a href="#disadvantage-of-direct-mapping" class="table-of-contents__link toc-highlight">Disadvantage of direct mapping</a></li><li><a href="#a-fully-associative-cache" class="table-of-contents__link toc-highlight">A fully associative cache</a></li><li><a href="#set-associativity" class="table-of-contents__link toc-highlight">Set associativity</a></li><li><a href="#locating-a-set-associative-block" class="table-of-contents__link toc-highlight">Locating a set associative block</a></li><li><a href="#example-placement-in-set-associative-caches" class="table-of-contents__link toc-highlight">Example placement in set-associative caches</a></li></ul></li><li><a href="#reference" class="table-of-contents__link toc-highlight">Reference</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Contect</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/docs/intro">Mail: zung880214@gmail.com</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Media</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/Falcons0214" target="_blank" rel="noopener noreferrer" class="footer__link-item">Github<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © Joseph Huang, Inc. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>
