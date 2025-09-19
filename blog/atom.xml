@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="atom.xsl"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://your-docusaurus-site.example.com/Joseph.github.io/blog</id>
-    <title>My Sitess Blog</title>
+    <title>Journey Blog</title>
     <updated>2025-04-19T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://your-docusaurus-site.example.com/Joseph.github.io/blog"/>
-    <subtitle>My Sitess Blog</subtitle>
+    <subtitle>Journey Blog</subtitle>
     <icon>https://your-docusaurus-site.example.com/Joseph.github.io/img/image.svg</icon>
     <entry>
         <title type="html"><![CDATA[花蓮 文山溫泉]]></title>
