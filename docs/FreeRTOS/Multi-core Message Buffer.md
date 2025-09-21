@@ -332,12 +332,18 @@ Single-core 要暫停的原因在於 notify mechanism 會需要修改 Task Contr
 
 The idea same as send, skip ~
 
-## Notify by PLIC
+## Notify by interrupt
 
 The **"interrupt structure"** will depend on different **"ISA"**, so in here we will use pseudo code.
 
 [entry.S](https://github.com/FreeRTOS/FreeRTOS/blob/main/FreeRTOS/Demo/RISC-V_RV32_SiFive_HiFive1-RevB_FreedomStudio/freedom-metal/src/entry.S)
 
+
+以 RISC-V PLIC 為例 會透過 對 Target panding bit 寫入 1 產生該 Target output wire 所連接到的 Core 的 MEIP or MSIP：
+```=
+PLIC_Trigger_function()
 ```
 
-```
+## Share Memory for identify the Interrupt event.
+
+Interrupt Wire 在只有一條線的情況下，若要將 FreeRTOS 中的功能全部支援 Cross-core 就需要一個額外的 “訊息” 來表示是 “誰 (Message-buffer、Notify、Queue)” 產生中斷。
