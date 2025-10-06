@@ -1,6 +1,6 @@
 ---
 slug: Music
-title: Miley Cyrus: Secret
+title: Miley-Cyrus Secret
 authors: [Joseph]
 tags: [music]
 ---
