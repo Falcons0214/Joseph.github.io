@@ -40,3 +40,7 @@ This concept is crucial because both **compilers** and **hardware** **aggressive
 `FENCE` instructions are used to order device I/O and memory accesses as viewed by other RISC-V
 harts and external devices or coprocessors.
 :::
+
+## Reference
+
+[Memory Consistency Models: A Tutorial](https://jamesbornholt.com/blog/memory-models/)
