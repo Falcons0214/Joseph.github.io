@@ -50,6 +50,3 @@ void do_driver_init(void) {
 :::warning
 `.__init.driver` section 中的資料皆為 指向特定 driver init function 的 function pointer，所以直接透過一個迴圈呼叫即可。
 :::
-
-## Driver Init dependency
-
