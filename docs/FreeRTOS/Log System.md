@@ -356,6 +356,10 @@ WAIT_BUFFER_EMPTY:
             if (!(logServ->bitmap & mask))
                 continue;
             
+            /*
+             * In below we have sWindex & sRindex, the 's' for server's index.
+             * cWindex & cRindex, the 'c' for client's index.
+             */
             sWindex = logServ->wIndex;
             sRindex = logServ->rIndex;
 
@@ -365,9 +369,19 @@ WAIT_BUFFER_EMPTY:
                 goto WAIT_BUFFER_EMPTY;
             }
             
-            /*
-             * Log Copy from client buffer to server buffer, skip.
-             */
+            cWindex = coresLogCtl[i]->wIndex;
+            cRindex = coresLogCtl[i]->rIndex;
+            for (; cRindex < cWindex && !LOGSERV_BUF_FULL;) {
+                from = CASTING_UINT64P(&(coresLogCtl[i]->logs[cRindex % LOGCLIENT_BUF_SIZE]));
+                to = CASTING_UINT64P(&(logServ->logs[sWindex % LOGSERV_BUF_SIZE]));
+
+                /*
+                 * Log Copy from client buffer to server buffer, skip.
+                 */
+
+                cRindex ++;
+                sWindex ++;
+            }
 
             coresLogCtl[i]->rIndex = cRindex;
             logServ->wIndex = sWindex;
