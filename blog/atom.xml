@@ -2,15 +2,33 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://your-docusaurus-site.example.com/Joseph.github.io/blog</id>
     <title>Journey Blog</title>
-    <updated>2025-11-01T00:00:00.000Z</updated>
+    <updated>2025-11-07T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://your-docusaurus-site.example.com/Joseph.github.io/blog"/>
     <subtitle>Journey Blog</subtitle>
     <icon>https://your-docusaurus-site.example.com/Joseph.github.io/img/image.svg</icon>
     <entry>
+        <title type="html"><![CDATA[Professional Life]]></title>
+        <id>https://your-docusaurus-site.example.com/Joseph.github.io/blog/Professional Life</id>
+        <link href="https://your-docusaurus-site.example.com/Joseph.github.io/blog/Professional Life"/>
+        <updated>2025-11-07T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[At 2025/11/07 I meet the worst situation in my Professional Life, "Negotiation for Decided Leave or Stay with Manager and CTO", the factors that caused this situation is we need sign a new contract and I don't agree some content in that and in this six months working experience I really hate my CTO's behavior and his emotional decision.]]></summary>
+        <content type="html"><![CDATA[<p>At 2025/11/07 I meet the worst situation in my Professional Life, "Negotiation for Decided Leave or Stay with Manager and CTO", the factors that caused this situation is we need sign a new contract and I don't agree some content in that and in this six months working experience I really hate my CTO's behavior and his emotional decision.</p>
+<p>When I noticed my relationship with the CTO had already broken down, actually I had some emotion that floating in my mind, like nervious and little bit scard etc ... And my heart rate keep rising in that monent.</p>
+<p>Despite that is very uncomfortable feeling, but a thought skip from my mind, "Enjoy each monent in your life even good or bad, and feeling all of that." this motto is from a comic "百米", and yes that helps me a lot to motivate myself to face the reality that is currently occurring.</p>
+<p>At the evening my manager bring me to a office, he want communication with me for stay here.
+At that time I told all of my doubt to him, and I think his replies already covered all the answers he can give me, so I decided to stay here for finish my system.</p>
+<p>Now, when I look back, I think the attitude that manager &amp; boss show me to retain me in the company, becasue I have the "technical skill" that they wanted to thier product, and also I still have the value that could use for helping them, and yes in professional life everything is about the "How much value you could provide", only the value that you can provide is higher than the package they provide for you, they will try retain you, otherwise game over.</p>]]></content>
+        <author>
+            <name>Joseph Huang</name>
+            <uri>https://www.linkedin.com/in/%E6%9F%8A%E6%A3%AE-%E9%BB%83-7b29251a9/</uri>
+        </author>
+        <category label="Life" term="Life"/>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[23 Music Room]]></title>
-        <id>https://your-docusaurus-site.example.com/Joseph.github.io/blog/2025/11/01/23 Music Room</id>
-        <link href="https://your-docusaurus-site.example.com/Joseph.github.io/blog/2025/11/01/23 Music Room"/>
+        <id>https://your-docusaurus-site.example.com/Joseph.github.io/blog/23 Music Room</id>
+        <link href="https://your-docusaurus-site.example.com/Joseph.github.io/blog/23 Music Room"/>
         <updated>2025-11-01T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[First for house music room, and that's great and enjoyable.]]></summary>
         <content type="html"><![CDATA[<p><img decoding="async" loading="lazy" src="https://your-docusaurus-site.example.com/Joseph.github.io/assets/images/IMG_0215-ba13f80ca0d693855c0dc734ddd595aa.jpg" width="3024" height="4032" class="img_ev3q"></p>
@@ -22,6 +40,11 @@
 And the more she talked the more feeling I got from the content, she still confused and the funnest part is the thing she confused is completely opposite of me. She asked me if she needed to do the things she doesn't like haha, and my replay is nope ~ Because those things will come to you automatically.
 In reality world, those things we don't like it, eventually we will face it at specific time, so choose what you want that is enough, because even you seems like it right now you still need some time for prove it, so just follow your heart.</p>
 <p>So back to house dancing, actually I want to move or swag with rhythm, but for fresh man that is very hard ~ And the amazing part of that is when I keep moving with rhythm, I feeling my brain have the picture about the step, so I start to focus on the rhythm and try to swag it with differnet moving haha.</p>]]></content>
+        <author>
+            <name>Joseph Huang</name>
+            <uri>https://www.linkedin.com/in/%E6%9F%8A%E6%A3%AE-%E9%BB%83-7b29251a9/</uri>
+        </author>
+        <category label="Life" term="Life"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Miley-Cyrus Secret]]></title>
