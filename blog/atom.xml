@@ -2,11 +2,29 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://your-docusaurus-site.example.com/Joseph.github.io/blog</id>
     <title>Journey Blog</title>
-    <updated>2025-11-07T00:00:00.000Z</updated>
+    <updated>2025-11-10T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://your-docusaurus-site.example.com/Joseph.github.io/blog"/>
     <subtitle>Journey Blog</subtitle>
     <icon>https://your-docusaurus-site.example.com/Joseph.github.io/img/image.svg</icon>
+    <entry>
+        <title type="html"><![CDATA[Game Over]]></title>
+        <id>https://your-docusaurus-site.example.com/Joseph.github.io/blog/Game Over</id>
+        <link href="https://your-docusaurus-site.example.com/Joseph.github.io/blog/Game Over"/>
+        <updated>2025-11-10T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[I left my job !]]></summary>
+        <content type="html"><![CDATA[<p>I left my job !</p>
+<p>Since we didn't have the same view on the new contract, the Boss told me I could find a new job right now.</p>
+<p>When I heard that, I actually had two emotions in my mind: relief and anxiety.</p>
+<p>For relax, I'm happy I could left the toxic environment and have time for consider next step, becasue in my poistion in company usually I need spend 11 hours a day monday to friday, and that very high working hours you need use all of your time tightly, and right now I free ~</p>
+<p>For anxiety, because I'm just a fresh man and I didn't have a lot of storage, so I have little bit nervious for spend money when I without any job. And another reason I think is I'm scard the next job the working enviroment still same as old job, and also scard I can't find the job that is I wished...</p>
+<p>But... we still need face reality and just keep going, always have light in path and I hope next place could let me stay there two or three years and that's all.</p>]]></content>
+        <author>
+            <name>Joseph Huang</name>
+            <uri>https://www.linkedin.com/in/%E6%9F%8A%E6%A3%AE-%E9%BB%83-7b29251a9/</uri>
+        </author>
+        <category label="Life" term="Life"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Professional Life]]></title>
         <id>https://your-docusaurus-site.example.com/Joseph.github.io/blog/Professional Life</id>

@@ -4,10 +4,24 @@
         <title>Journey Blog</title>
         <link>https://your-docusaurus-site.example.com/Joseph.github.io/blog</link>
         <description>Journey Blog</description>
-        <lastBuildDate>Fri, 07 Nov 2025 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 10 Nov 2025 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Game Over]]></title>
+            <link>https://your-docusaurus-site.example.com/Joseph.github.io/blog/Game Over</link>
+            <guid>https://your-docusaurus-site.example.com/Joseph.github.io/blog/Game Over</guid>
+            <pubDate>Mon, 10 Nov 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[I left my job !]]></description>
+            <content:encoded><![CDATA[<p>I left my job !</p>
+<p>Since we didn't have the same view on the new contract, the Boss told me I could find a new job right now.</p>
+<p>When I heard that, I actually had two emotions in my mind: relief and anxiety.</p>
+<p>For relax, I'm happy I could left the toxic environment and have time for consider next step, becasue in my poistion in company usually I need spend 11 hours a day monday to friday, and that very high working hours you need use all of your time tightly, and right now I free ~</p>
+<p>For anxiety, because I'm just a fresh man and I didn't have a lot of storage, so I have little bit nervious for spend money when I without any job. And another reason I think is I'm scard the next job the working enviroment still same as old job, and also scard I can't find the job that is I wished...</p>
+<p>But... we still need face reality and just keep going, always have light in path and I hope next place could let me stay there two or three years and that's all.</p>]]></content:encoded>
+            <category>Life</category>
+        </item>
         <item>
             <title><![CDATA[Professional Life]]></title>
             <link>https://your-docusaurus-site.example.com/Joseph.github.io/blog/Professional Life</link>
