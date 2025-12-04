@@ -227,7 +227,7 @@ Recv same as send.
 
 ## The Structure of Cross-core Message Buffer 
 
-![CtcMessageBuffer.drawio](https://hackmd.io/_uploads/BJvnfpP5ll.svg)
+![CtcMessageBuffer.drawio](./msg_buffer.svg)
 
 :::success
 **Behavior Description**

@@ -1,3 +1,10 @@
+---
+slug: 23 Music Room
+title: 23 Music Room
+authors: [Joseph]
+tags: [Life]
+---
+
 ![](./IMG_0215.jpg)
 
 First for house music room, and that's great and enjoyable.
