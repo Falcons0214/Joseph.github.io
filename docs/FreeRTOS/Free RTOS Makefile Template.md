@@ -4,10 +4,10 @@ Record Makefile for building FreeRTOS.
 
 ## Makefile
 
-```Makefile
-TC_PATH = /project_sw/toolchain/install/riscv-gcc-14.2.0-newlib/bin
-OBJDUMP = $(TC_PATH)/llvm-objdump
-OBJCOPY = $(TC_PATH)/riscv64-unknown-elf-objcopy
+```m
+TC_PATH = `Your Tool chain path`
+OBJDUMP = `objdump path`
+OBJCOPY = `objcopy path`
 
 XLEN   ?= 64
 CROSS   = $(TC_PATH)/riscv$(XLEN)-unknown-elf-
@@ -75,18 +75,9 @@ CPPFLAGS = \
 	-D__riscv_float_abi_soft \
 	$(ENV_DEFINES) \
 	-I . \
-	-I $(LOG_DIR) \
-	-I $(LIB_DIR) \
-	-I $(INIT_DIR) \
-	-I $(DRIVER_DIR) \
-	-I $(SIM_ENV_DIR) \
-	-I $(FX3_DIR)/inc \
-	-I $(RTOS_HAL_DIR) \
-	-I ../Common/include \
 	-I $(RTOS_SOURCE_DIR)/include \
 	-I $(RTOS_SOURCE_DIR)/portable/GCC/RISC-V \
 	-I $(RTOS_SOURCE_DIR)/portable/GCC/RISC-V/chip_specific_extensions/RISCV_no_extensions \
-	-I $(CURDIR)/../../../../../en_bsp/gen_headers/generated_headers/ # For fx3
 
 #
 # entry.c is entry point for FreeRTOS.
@@ -103,12 +94,6 @@ SRCS = \
 	$(RTOS_SOURCE_DIR)/portable/MemMang/heap_5.c \
 	$(RTOS_SOURCE_DIR)/portable/GCC/RISC-V/port.c \
 	$(wildcard *.c) \
-	$(wildcard $(RTOS_HAL_DIR)/*.c) \
-	$(wildcard $(SIM_ENV_DIR)/*.c) \
-	$(wildcard $(DRIVER_DIR)/*.c) \
-	$(wildcard $(INIT_DIR)/*.c) \
-	$(wildcard $(LIB_DIR)/*.c) \
-	$(wildcard $(LOG_DIR)/*.c) \
 	$(PRJ_ROOT)/main.c # Simulation Entry point.
 
 SRCS_CPP = \
@@ -119,7 +104,6 @@ ASMS = \
 	$(RTOS_SOURCE_DIR)/portable/GCC/RISC-V/portASM.S
 
 OBJS = $(SRCS:%.c=$(BUILD_DIR)/%.o) $(SRCS_CPP:%.cpp=$(BUILD_DIR)/%.o) $(ASMS:%.S=$(BUILD_DIR)/%.o)
-
 
 # Building Part.
 # Compile each .c or .cpp or .S code and generate object file,
@@ -134,12 +118,7 @@ $(BUILD_DIR)/RTOSDemo$(XLEN): $(OBJS) link_script.lds Makefile
 	cp $(BUILD_DIR)/RTOSDemo$(XLEN)_32.dat $(PRJ_ROOT)/bin_32.dat
 	cp $(BUILD_DIR)/RTOSDemo$(XLEN)_64.dat $(PRJ_ROOT)/bin_64.dat
 	cp $(BUILD_DIR)/RTOSDemo$(XLEN).dump $(PRJ_ROOT)/bin.dump
-	@echo "----- BUILD RTOS DONE -----"
-
-# For compile CPP code
-$(BUILD_DIR)/%.o: %.cpp Makefile
-	@mkdir -p $(@D)
-	$(CPP) $(CPPFLAGS) $(CFLAGS) -MMD -MP -c $< -o $@
+	@echo "----- BUILD RTOS DONE -----
 
 # For compile C code
 $(BUILD_DIR)/%.o: %.c Makefile
