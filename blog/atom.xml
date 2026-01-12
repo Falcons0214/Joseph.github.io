@@ -2,11 +2,26 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://your-docusaurus-site.example.com/Joseph.github.io/blog</id>
     <title>Journey Blog</title>
-    <updated>2025-11-10T00:00:00.000Z</updated>
+    <updated>2026-01-09T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://your-docusaurus-site.example.com/Joseph.github.io/blog"/>
     <subtitle>Journey Blog</subtitle>
     <icon>https://your-docusaurus-site.example.com/Joseph.github.io/img/image.svg</icon>
+    <entry>
+        <title type="html"><![CDATA[Next Stage]]></title>
+        <id>https://your-docusaurus-site.example.com/Joseph.github.io/blog/Next Stage</id>
+        <link href="https://your-docusaurus-site.example.com/Joseph.github.io/blog/Next Stage"/>
+        <updated>2026-01-09T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[短短一年從 鴻海 至 優式資本 再到 一間 Design House 待不久也離開了～]]></summary>
+        <content type="html"><![CDATA[<p>短短一年從 鴻海 至 優式資本 再到 一間 Design House 待不久也離開了～</p>
+<p>現在則要與大學以來至碩士一直給予我幫助的老師一同接案。</p>
+<p>我想這份不確定與不安會一直伴隨著我，我不知道要去哪，也不知道有怎樣的未來在等我。</p>]]></content>
+        <author>
+            <name>Joseph Huang</name>
+            <uri>https://www.linkedin.com/in/%E6%9F%8A%E6%A3%AE-%E9%BB%83-7b29251a9/</uri>
+        </author>
+        <category label="Life" term="Life"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Game Over]]></title>
         <id>https://your-docusaurus-site.example.com/Joseph.github.io/blog/Game Over</id>

@@ -4,10 +4,21 @@
         <title>Journey Blog</title>
         <link>https://your-docusaurus-site.example.com/Joseph.github.io/blog</link>
         <description>Journey Blog</description>
-        <lastBuildDate>Mon, 10 Nov 2025 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 09 Jan 2026 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Next Stage]]></title>
+            <link>https://your-docusaurus-site.example.com/Joseph.github.io/blog/Next Stage</link>
+            <guid>https://your-docusaurus-site.example.com/Joseph.github.io/blog/Next Stage</guid>
+            <pubDate>Fri, 09 Jan 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[短短一年從 鴻海 至 優式資本 再到 一間 Design House 待不久也離開了～]]></description>
+            <content:encoded><![CDATA[<p>短短一年從 鴻海 至 優式資本 再到 一間 Design House 待不久也離開了～</p>
+<p>現在則要與大學以來至碩士一直給予我幫助的老師一同接案。</p>
+<p>我想這份不確定與不安會一直伴隨著我，我不知道要去哪，也不知道有怎樣的未來在等我。</p>]]></content:encoded>
+            <category>Life</category>
+        </item>
         <item>
             <title><![CDATA[Game Over]]></title>
             <link>https://your-docusaurus-site.example.com/Joseph.github.io/blog/Game Over</link>
