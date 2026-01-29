@@ -2,11 +2,26 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://your-docusaurus-site.example.com/Joseph.github.io/blog</id>
     <title>Journey Blog</title>
-    <updated>2026-01-09T00:00:00.000Z</updated>
+    <updated>2026-01-29T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://your-docusaurus-site.example.com/Joseph.github.io/blog"/>
     <subtitle>Journey Blog</subtitle>
     <icon>https://your-docusaurus-site.example.com/Joseph.github.io/img/image.svg</icon>
+    <entry>
+        <title type="html"><![CDATA[Poem by George Gordon Byron]]></title>
+        <id>https://your-docusaurus-site.example.com/Joseph.github.io/blog/Poem</id>
+        <link href="https://your-docusaurus-site.example.com/Joseph.github.io/blog/Poem"/>
+        <updated>2026-01-29T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[\]]></summary>
+        <content type="html"><![CDATA[<p><br>
+<br>
+<strong>『縱然會心碎，仍得苟延於世』</strong></p>]]></content>
+        <author>
+            <name>Joseph Huang</name>
+            <uri>https://www.linkedin.com/in/%E6%9F%8A%E6%A3%AE-%E9%BB%83-7b29251a9/</uri>
+        </author>
+        <category label="Poem" term="Poem"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Next Stage]]></title>
         <id>https://your-docusaurus-site.example.com/Joseph.github.io/blog/Next Stage</id>
