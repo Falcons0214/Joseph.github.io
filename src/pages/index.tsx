@@ -18,11 +18,11 @@ export default function Home(): ReactNode {
         <div className="container">
         <img src="/Joseph.github.io/img/background.jpg" alt="Description of the image"/>
           <blockquote cite="https://datatracker.ietf.org/doc/html/rfc1149">
-          <p className="main-heading">You need to recognize reality to escape from it.</p>
+          <p className="main-heading">Memento Mori</p>
           </blockquote>
           <div>
             <h1 className='self-intro-head'>關於我</h1>
-            <p> 一位工程師，熟悉 Operating System 與各式嵌入式開發技能 (C、Link-script、Assembly、GNU extensions)。</p>
+            <p> 一位熟悉 Operating System 與 C、Link-script、Assembly、GNU extensions & Rust Programming Language 的人。</p>
             <p> 曾經是一位鐵人三項運動員，至今仍保持穩定的運動習慣。 </p>
             <p> 原本是一位不喜歡拍照與記錄的靈魂，在發現那些隨著時間被沖刷掉的感受後，希望能夠以此，讓自己回顧時，想起當時的感覺。 </p>
             <p> 自幹了一顆 RV32I Five Pipeline CPU。 </p>
