@@ -4,19 +4,33 @@
         <title>Journey Blog</title>
         <link>https://your-docusaurus-site.example.com/Joseph.github.io/blog</link>
         <description>Journey Blog</description>
-        <lastBuildDate>Thu, 29 Jan 2026 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 10 Feb 2026 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
         <item>
+            <title><![CDATA[Mindset about Mastery]]></title>
+            <link>https://your-docusaurus-site.example.com/Joseph.github.io/blog/Mindset about Mastery</link>
+            <guid>https://your-docusaurus-site.example.com/Joseph.github.io/blog/Mindset about Mastery</guid>
+            <pubDate>Tue, 10 Feb 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[Real mastery isn't about arriving somewhere. \]]></description>
+            <content:encoded><![CDATA[<center><strong>Real mastery isn't about arriving somewhere. <br>
+<!-- -->It's about becoming the kind of person <br>
+<!-- -->who can navigate anywhere, <br>
+<!-- -->developing such comfort with experimentation <br>
+<!-- -->that you can adapt, grow, <br>
+<!-- -->and find new edges no matter what domain you're exploring.</strong></center>]]></content:encoded>
+            <category>Poem</category>
+        </item>
+        <item>
             <title><![CDATA[Poem by George Gordon Byron]]></title>
-            <link>https://your-docusaurus-site.example.com/Joseph.github.io/blog/Poem</link>
-            <guid>https://your-docusaurus-site.example.com/Joseph.github.io/blog/Poem</guid>
+            <link>https://your-docusaurus-site.example.com/Joseph.github.io/blog/Poem by George Gordon Byron</link>
+            <guid>https://your-docusaurus-site.example.com/Joseph.github.io/blog/Poem by George Gordon Byron</guid>
             <pubDate>Thu, 29 Jan 2026 00:00:00 GMT</pubDate>
             <description><![CDATA[\]]></description>
             <content:encoded><![CDATA[<p><br>
 <br>
-<strong>『縱然會心碎，仍得苟延於世』</strong></p>]]></content:encoded>
+</p><center><strong>『縱然會心碎，仍得苟延於世』</strong></center><p></p>]]></content:encoded>
             <category>Poem</category>
         </item>
         <item>
