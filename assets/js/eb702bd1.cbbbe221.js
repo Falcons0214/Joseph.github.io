@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[6422],{2455:e=>{e.exports=JSON.parse('{"metadata":{"permalink":"/Joseph.github.io/blog/page/2","page":2,"postsPerPage":10,"totalPages":2,"totalCount":11,"previousPage":"/Joseph.github.io/blog","blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
