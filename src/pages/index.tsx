@@ -21,8 +21,7 @@ export default function Home(): ReactNode {
           <p className="main-heading">Memento Mori</p>
           </blockquote>
           <div>
-            <h1 className='self-intro-head'>關於我</h1>
-            <p> 一位熟悉 Operating System 與 C、Link-script、Assembly、GNU extensions & Rust Programming Language 的人。</p>
+            <h1 className='self-intro-head'>關於我</h1> 
             <p> 曾經是一位鐵人三項運動員，至今仍保持穩定的運動習慣。 </p>
             <p> 原本是一位不喜歡拍照與記錄的靈魂，在發現那些隨著時間被沖刷掉的感受後，希望能夠以此，讓自己回顧時，想起當時的感覺。 </p>
             <p> 自幹了一顆 RV32I Five Pipeline CPU。 </p>
